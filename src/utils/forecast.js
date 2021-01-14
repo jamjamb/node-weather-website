@@ -25,6 +25,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback('Unable to find location', undefined)
         } else {
+            console.log(body.current.weather_descriptions.humidity)
             callback(undefined, {
                 locationName: body.location.name,
                 locationRegion: body.location.region, 
@@ -33,7 +34,8 @@ const forecast = (latitude, longitude, callback) => {
                 locationLon: body.location.lon, 
                 currentTemp: body.current.temperature, 
                 currentFeelsLike: body.current.feelslike, 
-                currentDescription: body.current.weather_descriptions[0]
+                currentDescription: body.current.weather_descriptions[0],
+                humidity: body.current.humidity
             })
         }
     })

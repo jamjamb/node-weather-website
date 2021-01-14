@@ -44,6 +44,7 @@ weatherForm.addEventListener('submit', (e) => {
                 messageLocation.textContent = data.location
                 messageCurrently.textContent = data.forecast.currentDescription
                 + ', current temperature is ' + data.forecast.currentTemp
+                + ', humidity is ' + data.forecast.humidity
                 messageError.textContent = ''
                 console.log(data)
             }
