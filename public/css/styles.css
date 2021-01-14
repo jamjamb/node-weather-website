@@ -1,0 +1,79 @@
+body {
+    color: grey;
+    font-family: Tahoma;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+div {
+    border: 1px solid silver;
+    padding: 10px;
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+header {
+    margin-top: 10px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: red;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+img.author {
+    border: 1px solid red;
+    width: 200px;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    width: 50%;
+}
+
+button {
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 10px;
+}
+
+#message-location {
+    color: darkslategray;
+    font-size: 9pt;
+}
+#message-currently {
+    color: darkslategray;
+    font-size: 9pt;
+}
+#message-error {
+    color: red;
+    font-size: 9pt;
+}
